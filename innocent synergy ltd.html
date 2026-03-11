@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innocent Synergy Inter. Ltd. - Your Equipment Solutions</title>
+    <meta name="description" content="Leading supplier of pressure washers, agricultural chemicals, grass cutting machines, vacuum cleaners, and maintenance services in Africa">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryGreen: "#10b981",
+                        secondaryBlue: "#0ea5e9",
+                        accentOrange: "#f97316",
+                        darkGreen: "#065f46",
+                        lightGreen: "#d1fae5",
+                        companyGold: "#f59e0b",
+                        companyRed: "#dc2626",
+                        companyPurple: "#8b5cf6"
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'montserrat': ['Montserrat', 'sans-serif'],
+                        'raleway': ['Raleway', 'sans-serif']
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+                        'slide-in': 'slide-in 0.5s ease-out',
+                        'bounce-subtle': 'bounce-subtle 2s infinite'
+                    },
+                    keyframes: {
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { boxShadow: '0 0 20px rgba(16, 185, 129, 0.3)' },
+                            '50%': { boxShadow: '0 0 40px rgba(16, 185, 129, 0.6)' }
+                        },
+                        'slide-in': {
+                            '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        'bounce-subtle': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        }
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://picsum.photos/1600/900?random=1')",
+                        'gradient-agri': 'linear-gradient(135deg, #10b981 0%, #0ea5e9 50%, #f59e0b 100%)'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .company-gradient {
+            background: linear-gradient(135deg, #10b981 0%, #0ea5e9 50%, #f59e0b 100%);
+        }
+        
+        .equipment-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            background: linear-gradient(white, white) padding-box,
+                        linear-gradient(135deg, #10b981, #0ea5e9) border-box;
+        }
+        
+        .equipment-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2);
+        }
+        
+        .chemical-card {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-left: 6px solid #10b981;
+        }
+        
+        .pest-card {
+            background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
+            border-left: 6px solid #dc2626;
+        }
+        
+        .maintenance-card {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border-left: 6px solid #0ea5e9;
+        }
+        
+        .logo-container {
+            background: linear-gradient(135deg, #10b981 0%, #0ea5e9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .business-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .category-tab {
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+        
+        .category-tab.active {
+            border-bottom-color: #10b981;
+            color: #10b981;
+            font-weight: 600;
+        }
+        
+        .whatsapp-float {
+            animation: bounce-subtle 2s infinite;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-gray-50 to-white font-poppins">
+    <!-- Header with Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex flex-col md:flex-row justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="w-16 h-16 company-gradient rounded-full flex items-center justify-center animate-pulse-glow">
+                        <i class="fas fa-tractor text-white text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-bold font-montserrat logo-container">INNOCENT SYNERGY INTER. LTD.</h1>
+                        <p class="text-sm text-gray-600 font-raleway">Your Equipment Solutions</p>
+                    </div>
+                </div>
+                
+                <!-- Navigation -->
+                <ul id="nav-list" class="flex flex-wrap gap-4 md:gap-6"></ul>
+                
+                <!-- Contact Button -->
+                <div class="mt-4 md:mt-0">
+                    <button id="contact-btn" class="bg-primaryGreen text-white px-6 py-3 rounded-full font-semibold hover:bg-darkGreen transition-colors flex items-center space-x-2">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Contact Now</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-hero-pattern"></div>
+        <div class="container mx-auto px-4 py-20 md:py-32 relative">
+            <div class="max-w-4xl mx-auto text-center text-white">
+                <div class="mb-8 animate-float">
+                    <i class="fas fa-industry text-6xl text-accentOrange"></i>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 font-montserrat">
+                    Agricultural Excellence Since <span class="text-accentOrange">2015</span>
+                </h2>
+                <p class="text-xl mb-8 text-gray-200">
+                    We are one of the bestsellers of Agricultural enhancement machines and chemicals in Africa
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button id="catalog-btn" class="bg-accentOrange text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 transition-colors hover:scale-105">
+                        <i class="fas fa-book mr-2"></i>View Product Catalog
+                    </button>
+                    <button id="quote-btn" class="bg-white text-primaryGreen px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors hover:scale-105">
+                        <i class="fas fa-file-invoice-dollar mr-2"></i>Get Free Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Category Tabs -->
+        <div class="mb-12">
+            <div class="flex flex-wrap gap-4 justify-center border-b pb-4">
+                <button class="category-tab active px-6 py-3" data-category="all">All Products</button>
+                <button class="category-tab px-6 py-3" data-category="pressure-washers">Pressure Washers</button>
+                <button class="category-tab px-6 py-3" data-category="chemicals">Chemicals</button>
+                <button class="category-tab px-6 py-3" data-category="grass-cutters">Grass Cutters</button>
+                <button class="category-tab px-6 py-3" data-category="vacuum">Vacuum Cleaners</button>
+                <button class="category-tab px-6 py-3" data-category="maintenance">Maintenance</button>
+            </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <!-- Pressure Washers -->
+            <div class="col-span-full">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-spray-can text-secondaryBlue mr-3"></i>
+                    Pressure Washing Machines
+                </h3>
+                <div id="pressure-washers" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+            </div>
+
+            <!-- Grass Killing Chemicals -->
+            <div class="col-span-full mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-leaf text-primaryGreen mr-3"></i>
+                    Grass Killing Chemicals
+                </h3>
+                <div id="grass-chemicals" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+            </div>
+
+            <!-- Pest Control Chemicals -->
+            <div class="col-span-full mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-bug text-companyRed mr-3"></i>
+                    Pest Control Chemicals
+                </h3>
+                <div id="pest-chemicals" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+            </div>
+
+            <!-- Chemical Spray Cans -->
+            <div class="col-span-full mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-flask text-companyPurple mr-3"></i>
+                    Chemical Spray Cans
+                </h3>
+                <div id="spray-cans" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+            </div>
+
+            <!-- Vacuum Cleaners -->
+            <div class="col-span-full mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-wind text-secondaryBlue mr-3"></i>
+                    Vacuum Cleaners (All Sizes)
+                </h3>
+                <div id="vacuum-cleaners" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+            </div>
+
+            <!-- Grass Cutting Machines -->
+            <div class="col-span-full mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-cut text-accentOrange mr-3"></i>
+                    Grass Cutting Machines
+                </h3>
+                <div id="grass-cutters" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+            </div>
+
+            <!-- Lawn Mowers -->
+            <div class="col-span-full mt-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+                    <i class="fas fa-tree text-darkGreen mr-3"></i>
+                    Lawn Mowers (All Series)
+                </h3>
+                <div id="lawn-mowers" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+            </div>
+        </div>
+
+        <!-- Maintenance Section -->
+        <section class="bg-gradient-to-r from-primaryGreen to-secondaryBlue text-white rounded-3xl p-8 mb-16">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="md:w-2/3">
+                        <h2 class="text-4xl font-bold mb-4">Professional Maintenance Services</h2>
+                        <p class="text-xl mb-6">
+                            <i class="fas fa-tools mr-2"></i>
+                            We maintain all agricultural machines including the listed ones above
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-accentOrange mr-3 text-xl"></i>
+                                <span>Regular servicing and repairs</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-accentOrange mr-3 text-xl"></i>
+                                <span>Spare parts replacement</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-accentOrange mr-3 text-xl"></i>
+                                <span>Performance optimization</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-accentOrange mr-3 text-xl"></i>
+                                <span>Warranty support</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 md:mt-0">
+                        <div class="w-48 h-48 bg-white rounded-full flex items-center justify-center animate-float">
+                            <i class="fas fa-cogs text-6xl text-primaryGreen"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Card & Contact -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <!-- Business Card -->
+            <div class="business-card rounded-2xl p-8">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Our Business Card</h3>
+                <div class="company-gradient rounded-xl p-1 mb-6">
+                    <div class="bg-white rounded-lg p-6">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 company-gradient rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-tractor text-white text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-800">INNOCENT SYNERGY INTER. LTD.</h4>
+                                <p class="text-primaryGreen font-semibold">Your Equipment Solutions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-primaryGreen mr-3"></i>
+                                <div>
+                                    <p class="font-semibold">Address:</p>
+                                    <p class="text-gray-600">54 Ojiebu Street, Abuja byepass, Mile 3</p>
+                                    <p class="text-gray-600">Port Harcourt, Rivers State, Nigeria</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-secondaryBlue mr-3"></i>
+                                <div>
+                                    <p class="font-semibold">Email:</p>
+                                    <p class="text-gray-600">kelechiezeokeke@gmail.com</p>
+                                    <p class="text-gray-600">innocentezeokeketobechukwu@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-accentOrange mr-3"></i>
+                                <div>
+                                    <p class="font-semibold">Phone Numbers:</p>
+                                    <p class="text-gray-600">08038855582</p>
+                                    <p class="text-gray-600">09122032417</p>
+                                    <p class="text-gray-600">09065107775</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 pt-6 border-t text-center">
+                            <p class="text-sm text-gray-500">Reach out to our Managers for inquiries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h3 class="text-3xl font-bold text-gray-800 mb-6">Get In Touch</h3>
+                <form id="contact-form" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryGreen" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryGreen" required>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2">Email Address</label>
+                        <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryGreen" required>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2">Product Interest</label>
+                        <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryGreen">
+                            <option>Pressure Washers</option>
+                            <option>Chemicals</option>
+                            <option>Grass Cutting Machines</option>
+                            <option>Vacuum Cleaners</option>
+                            <option>Maintenance Services</option>
+                            <option>All Products</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 mb-2">Message</label>
+                        <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primaryGreen"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-primaryGreen text-white py-4 rounded-lg font-semibold hover:bg-darkGreen transition-colors">
+                        <i class="fas fa-paper-plane mr-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Company Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+            <div class="bg-white p-6 rounded-xl shadow text-center">
+                <div class="text-4xl font-bold text-primaryGreen mb-2">2015</div>
+                <p class="text-gray-600">Year Established</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow text-center">
+                <div class="text-4xl font-bold text-secondaryBlue mb-2">500+</div>
+                <p class="text-gray-600">Products Available</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow text-center">
+                <div class="text-4xl font-bold text-accentOrange mb-2">24/7</div>
+                <p class="text-gray-600">Customer Support</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow text-center">
+                <div class="text-4xl font-bold text-companyPurple mb-2">100+</div>
+                <p class="text-gray-600">Cities Served</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-12 h-12 company-gradient rounded-full flex items-center justify-center">
+                            <i class="fas fa-tractor text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">INNOCENT SYNERGY INTER. LTD.</h3>
+                            <p class="text-gray-400 text-sm">Your Equipment Solutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">Leading supplier of agricultural equipment and chemicals across Africa since 2023.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul id="footer-links" class="space-y-2"></ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Info</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primaryGreen mt-1 mr-3"></i>
+                            <span class="text-gray-400">54 Ojiebu Street, Abuja byepass, Mile 3, Port Harcourt, Rivers State, Nigeria</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-secondaryBlue mr-3"></i>
+                            <span class="text-gray-400">08038855582 | 09122032417 | 09065107775</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primaryGreen transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-secondaryBlue transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-accentOrange transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-400">Subscribe for updates on new products</p>
+                    <div class="flex mt-2">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 rounded-l-lg text-gray-900">
+                        <button class="bg-primaryGreen px-4 py-2 rounded-r-lg font-semibold hover:bg-darkGreen">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>© 2026 Innocent Synergy Inter. Ltd. All rights reserved. | RC Number: 1234567</p>
+                <p class="mt-2 text-sm">One of the bestsellers of Agricultural enhancement machines and chemicals in Africa</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/2348038855582" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform whatsapp-float">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Data Layer -->
+    <script>
+        // Navigation Data
+        const navigationItems = [
+            { "label": "Home", "href": "#home", "icon": "fas fa-home" },
+            { "label": "Products", "href": "#products", "icon": "fas fa-box" },
+            { "label": "Chemicals", "href": "#chemicals", "icon": "fas fa-flask" },
+            { "label": "Machines", "href": "#machines", "icon": "fas fa-tractor" },
+            { "label": "Maintenance", "href": "#maintenance", "icon": "fas fa-tools" },
+            { "label": "Contact", "href": "#contact", "icon": "fas fa-phone" }
+        ];
+
+        // Pressure Washers
+        const pressureWashers = [
+            { 
+                "name": "Steam Wash Machine", 
+                "description": "High-pressure steam cleaning for industrial use",
+                "image": "https://picsum.photos/400/300?SteamWashMachine=10",
+                "price": "₦4,500,000",
+                "features": ["5000 PSI", "Hot Water", "Industrial Grade"]
+            },
+            { 
+                "name": "Gasoline Pressure Washer", 
+                "description": "Portable gasoline-powered washer for remote areas",
+                "image": "https://picsum.photos/400/300?random=11",
+                "price": "₦500,000",
+                "features": ["3200 PSI", "Gasoline Engine", "Portable"]
+            },
+            { 
+                "name": "Electric Pressure Washer", 
+                "description": "Efficient electric washer for residential use",
+                "image": "https://picsum.photos/400/300?random=12",
+                "price": "₦350,000",
+                "features": ["2800 PSI", "Electric Motor", "Quiet Operation"]
+            }
+        ];
+
+        // Grass Killing Chemicals
+        const grassChemicals = [
+            { 
+                "name": "Force Up", 
+                "description": "Fast-acting grass and weed killer",
+                "image": "https://picsum.photos/400/300?random=13",
+                "price": "₦5,000",
+                "size": "1 Liter",
+                "effect": "Kills in 24 hours"
+            },
+            { 
+                "name": "Uproot", 
+                "description": "Systemic herbicide for complete root elimination",
+                "image": "https://picsum.photos/400/300?random=14",
+                "price": "₦5,500",
+                "size": "1 Liter",
+                "effect": "Kills in 3 days, prevents regrowth"
+            },
+            { 
+                "name": "Clearweed", 
+                "description": "Selective herbicide for lawn maintenance",
+                "image": "https://picsum.photos/400/300?random=15",
+                "price": "₦5,000",
+                "size": "1 Liter",
+                "effect": "Kills in 24 hours"
+            }
+        ];
+
+        // Pest Control Chemicals
+        const pestChemicals = [
+            { 
+                "name": "DD Force", 
+                "description": "Powerful snake repellent and killer",
+                "image": "https://picsum.photos/400/300?random=16",
+                "price": "₦15,000",
+                "price 2": "₦5,000",
+                "type": "Snake Control and Bedbug Control",
+                "coverage": "500 sq meters"
+            },
+            { 
+                "name": "Sniper", 
+                "description": "Effective bedbug and insecticide spray",
+                "image": "https://picsum.photos/400/300?random=17",
+                "price": "₦15,000",
+                "price 2":"₦5,000",
+                "type": "Bedbug Control and Snake Control",
+                "coverage": "Room treatment"
+            },
+            { 
+                "name": "Truepest", 
+                "description": "Rat and rodent control chemical",
+                "image": "https://picsum.photos/400/300?random=18",
+                "price": "₦20,000",
+                "type": "Bedbug Control and Snake Control andRat Control",
+                "coverage": "Bait stations, 500 sq meters"
+            }
+        ];
+
+        // Spray Cans
+        const sprayCans = [
+            { 
+                "name": "16L Spray Can", 
+                "description": "Large capacity sprayer for commercial use",
+                "image": "https://picsum.photos/400/300?random=19",
+                "price": "₦28,000",
+                "capacity": "16 Liters",
+                "features": ["Backpack Style", "Adjustable Nozzle", "Pressure Pump"]
+            },
+            { 
+                "name": "2L Spray Can", 
+                "description": "Compact sprayer for residential use",
+                "image": "https://picsum.photos/400/300?random=20",
+                "price": "₦5,000",
+                "capacity": "2 Liters",
+                "features": ["Handheld", "Easy Pump", "Portable"]
+            }
+        ];
+
+        // Vacuum Cleaners
+        const vacuumCleaners = [
+            { 
+                "name": "Industrial Vacuum", 
+                "description": "Heavy-duty vacuum for large spaces",
+                "image": "https://picsum.photos/400/300?random=21",
+                "price": "₦600,000",
+                "power": "3000W",
+                "capacity": "30 Liters"
+            },
+            { 
+                "name": "Commercial Vacuum", 
+                "description": "Medium-sized vacuum for offices",
+                "image": "https://picsum.photos/400/300?random=22",
+                "price": "₦320,000",
+                "power": "2000W",
+                "capacity": "15 Liters"
+            },
+            { 
+                "name": "Residential Vacuum", 
+                "description": "Compact vacuum for homes",
+                "image": "https://picsum.photos/400/300?random=23",
+                "price": "₦160,000",
+                "power": "1500W",
+                "capacity": "8 Liters"
+            }
+        ];
+
+        // Grass Cutting Machines
+        const grassCutters = [
+            { 
+                "name": "Stihl Grass Cutter", 
+                "description": "Professional grass cutter with 430HP engine",
+                "image": "https://picsum.photos/400/300?random=24",
+                "price": "₦600,000",
+                "engine": "fs 250 ",
+                "includes": ["Machine", "Rope", "Blade"]
+            },
+            { 
+                "name": "Maxmech Grass Cutter", 
+                "description": "Heavy-duty cutter for tough vegetation",
+                "image": "https://picsum.photos/400/300?random=25",
+                "price": "₦150,000",
+                "engine": "430 HP",
+                "includes": ["Machine", "Rope", "Blade"]
+            },
+            { 
+                "name": "Elephant Grass Cutter", 
+                "description": "Reliable cutter for commercial use",
+                "image": "https://picsum.photos/400/300?random=26",
+                "price": "₦180,000",
+                "engine": "430 HP",
+                "includes": ["Machine", "Rope", "Blade"]
+            }
+        ];
+
+        // Lawn Mowers
+        const lawnMowers = [
+            { 
+                "name": "Series 500 Lawn Mower", 
+                "description": "Self-propelled lawn mower for large lawns",
+                "image": "https://picsum.photos/400/300?random=27",
+                "price": "₦700,000",
+                "type": "Riding Mower",
+                "features": ["6-Speed", "Bagging System", "Electric Start"]
+            },
+            { 
+                "name": "Series 300 Lawn Mower", 
+                "description": "Push mower for medium-sized lawns",
+                "image": "https://picsum.photos/400/300?random=28",
+                "price": "₦400,000",
+                "type": "Push Mower",
+                "features": ["21-inch Deck", "Adjustable Height", "Easy Storage"]
+            },
+            { 
+                "name": "Series 100 Lawn Mower", 
+                "description": "Compact mower for small gardens",
+                "image": "https://picsum.photos/400/300?random=29",
+                "price": "₦300,000",
+                "type": "Electric Mower",
+                "features": ["Cordless", "Lightweight", "Quiet Operation"]
+            }
+        ];
+
+        // Footer Links
+        const footerLinks = [
+            { "label": "About Us", "href": "#about" },
+            { "label": "Products", "href": "#products" },
+            { "label": "Services", "href": "#services" },
+            { "label": "Maintenance", "href": "#maintenance" },
+            { "label": "Contact", "href": "#contact" },
+            { "label": "Privacy Policy", "href": "#privacy" }
+        ];
+
+        // Render Functions
+        function renderNavItem(item) {
+            return `
+                <li>
+                    <a href="${item.href}" class="flex items-center space-x-2 text-gray-700 hover:text-primaryGreen transition-colors font-medium">
+                        <i class="${item.icon}"></i>
+                        <span>${item.label}</span>
+                    </a>
+                </li>
+            `;
+        }
+
+        function renderPressureWasher(item) {
+            return `
+                <div class="equipment-card rounded-xl p-6" data-category="pressure-washers">
+                    <div class="mb-4">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">${item.name}</h4>
+                    <p class="text-gray-600 mb-4">${item.description}</p>
+                    <div class="space-y-2 mb-4">
+                        ${item.features.map(feature => `
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-check text-primaryGreen mr-2"></i>
+                                <span>${feature}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-primaryGreen">${item.price}</span>
+                        <button class="bg-primaryGreen text-white px-4 py-2 rounded-lg hover:bg-darkGreen transition-colors">
+                            <i class="fas fa-shopping-cart mr-2"></i>Order
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderGrassChemical(item) {
+            return `
+                <div class="chemical-card rounded-xl p-6" data-category="chemicals">
+                    <div class="mb-4">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">${item.name}</h4>
+                    <p class="text-gray-600 mb-3">${item.description}</p>
+                    <div class="grid grid-cols-2 gap-2 mb-4">
+                        <div class="bg-white p-2 rounded">
+                            <p class="text-sm text-gray-500">Size</p>
+                            <p class="font-semibold">${item.size}</p>
+                        </div>
+                        <div class="bg-white p-2 rounded">
+                            <p class="text-sm text-gray-500">Effect</p>
+                            <p class="font-semibold">${item.effect}</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-primaryGreen">${item.price}</span>
+                        <button class="bg-primaryGreen text-white px-4 py-2 rounded-lg hover:bg-darkGreen transition-colors">
+                            <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderPestChemical(item) {
+            return `
+                <div class="pest-card rounded-xl p-6" data-category="chemicals">
+                    <div class="mb-4">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">${item.name}</h4>
+                    <p class="text-gray-600 mb-3">${item.description}</p>
+                    <div class="grid grid-cols-2 gap-2 mb-4">
+                        <div class="bg-white p-2 rounded">
+                            <p class="text-sm text-gray-500">Type</p>
+                            <p class="font-semibold">${item.type}</p>
+                        </div>
+                        <div class="bg-white p-2 rounded">
+                            <p class="text-sm text-gray-500">Coverage</p>
+                            <p class="font-semibold">${item.coverage}</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-companyRed">${item.price}</span>
+                        <button class="bg-companyRed text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors">
+                            <i class="fas fa-shopping-basket mr-2"></i>Buy Now
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderSprayCan(item) {
+            return `
+                <div class="equipment-card rounded-xl p-6" data-category="chemicals">
+                    <div class="mb-4">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">${item.name}</h4>
+                    <p class="text-gray-600 mb-3">${item.description}</p>
+                    <div class="mb-4">
+                        <div class="bg-primaryGreen text-white px-3 py-1 rounded-full inline-block">
+                            <i class="fas fa-weight-hanging mr-2"></i>${item.capacity}
+                        </div>
+                    </div>
+                    <div class="space-y-2 mb-4">
+                        ${item.features.map(feature => `
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-check text-secondaryBlue mr-2"></i>
+                                <span>${feature}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-secondaryBlue">${item.price}</span>
+                        <button class="bg-secondaryBlue text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                            <i class="fas fa-shopping-cart mr-2"></i>Order
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderVacuumCleaner(item) {
+            return `
+                <div class="equipment-card rounded-xl p-6" data-category="vacuum">
+                    <div class="mb-4">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">${item.name}</h4>
+                    <p class="text-gray-600 mb-3">${item.description}</p>
+                    <div class="grid grid-cols-2 gap-2 mb-4">
+                        <div class="bg-gray-50 p-2 rounded">
+                            <p class="text-sm text-gray-500">Power</p>
+                            <p class="font-semibold">${item.power}</p>
+                        </div>
+                        <div class="bg-gray-50 p-2 rounded">
+                            <p class="text-sm text-gray-500">Capacity</p>
+                            <p class="font-semibold">${item.capacity}</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-gray-800">${item.price}</span>
+                        <button class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-black transition-colors">
+                            <i class="fas fa-cart-plus mr-2"></i>Add to Cart
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderGrassCutter(item) {
+            return `
+                <div class="equipment-card rounded-xl p-6" data-category="grass-cutters">
+                    <div class="mb-4">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">${item.name}</h4>
+                    <p class="text-gray-600 mb-3">${item.description}</p>
+                    <div class="mb-4">
+                        <div class="bg-accentOrange text-white px-3 py-1 rounded-full inline-block">
+                            <i class="fas fa-gas-pump mr-2"></i>${item.engine}
+                        </div>
+                    </div>
+                    <div class="space-y-2 mb-4">
+                        ${item.includes.map(incl => `
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-check text-accentOrange mr-2"></i>
+                                <span>${incl}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-accentOrange">${item.price}</span>
+                        <button class="bg-accentOrange text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors">
+                            <i class="fas fa-tools mr-2"></i>Order Now
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderLawnMower(item) {
+            return `
+                <div class="equipment-card rounded-xl p-6" data-category="grass-cutters">
+                    <div class="mb-4">
+                        <img src="${item.image}" alt="${item.name}" class="w-full h-48 object-cover rounded-lg">
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-800 mb-2">${item.name}</h4>
+                    <p class="text-gray-600 mb-3">${item.description}</p>
+                    <div class="mb-4">
+                        <div class="bg-darkGreen text-white px-3 py-1 rounded-full inline-block">
+                            <i class="fas fa-tag mr-2"></i>${item.type}
+                        </div>
+                    </div>
+                    <div class="space-y-2 mb-4">
+                        ${item.features.map(feature => `
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-check text-darkGreen mr-2"></i>
+                                <span>${feature}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-2xl font-bold text-darkGreen">${item.price}</span>
+                        <button class="bg-darkGreen text-white px-4 py-2 rounded-lg hover:bg-green-900 transition-colors">
+                            <i class="fas fa-shopping-cart mr-2"></i>Purchase
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderFooterLink(link) {
+            return `<li><a href="${link.href}" class="text-gray-400 hover:text-white transition-colors">${link.label}</a></li>`;
+        }
+
+        // DOM Injection
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navigation
+            const navList = document.getElementById('nav-list');
+            navList.innerHTML = navigationItems.map(renderNavItem).join('');
+            
+            // Pressure Washers
+            const pressureWashersContainer = document.getElementById('pressure-washers');
+            pressureWashersContainer.innerHTML = pressureWashers.map(renderPressureWasher).join('');
+            
+            // Grass Chemicals
+            const grassChemicalsContainer = document.getElementById('grass-chemicals');
+            grassChemicalsContainer.innerHTML = grassChemicals.map(renderGrassChemical).join('');
+            
+            // Pest Chemicals
+            const pestChemicalsContainer = document.getElementById('pest-chemicals');
+            pestChemicalsContainer.innerHTML = pestChemicals.map(renderPestChemical).join('');
+            
+            // Spray Cans
+            const sprayCansContainer = document.getElementById('spray-cans');
+            sprayCansContainer.innerHTML = sprayCans.map(renderSprayCan).join('');
+            
+            // Vacuum Cleaners
+            const vacuumCleanersContainer = document.getElementById('vacuum-cleaners');
+            vacuumCleanersContainer.innerHTML = vacuumCleaners.map(renderVacuumCleaner).join('');
+            
+            // Grass Cutters
+            const grassCuttersContainer = document.getElementById('grass-cutters');
+            grassCuttersContainer.innerHTML = grassCutters.map(renderGrassCutter).join('');
+            
+            // Lawn Mowers
+            const lawnMowersContainer = document.getElementById('lawn-mowers');
+            lawnMowersContainer.innerHTML = lawnMowers.map(renderLawnMower).join('');
+            
+            // Footer Links
+            const footerLinksContainer = document.getElementById('footer-links');
+            footerLinksContainer.innerHTML = footerLinks.map(renderFooterLink).join('');
+            
+            // Category Tabs Filtering
+            const categoryTabs = document.querySelectorAll('.category-tab');
+            const allProducts = document.querySelectorAll('[data-category]');
+            
+            categoryTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Update active tab
+                    categoryTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    // Filter products
+                    allProducts.forEach(product => {
+                        if (category === 'all' || product.getAttribute('data-category') === category) {
+                            product.style.display = 'block';
+                            product.classList.add('animate-slide-in');
+                        } else {
+                            product.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Contact Form Submission
+            const contactForm = document.getElementById('contact-form');
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show success message
+                alert('Thank you for your inquiry! Our managers will contact you within 24 hours.');
+                contactForm.reset();
+                
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            
+            // Contact Button
+            document.getElementById('contact-btn').addEventListener('click', function() {
+                document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            // Catalog Button
+            document.getElementById('catalog-btn').addEventListener('click', function() {
+                document.querySelector('.category-tab[data-category="all"]').click();
+                document.querySelector('.category-tab[data-category="all"]').scrollIntoView({ behavior: 'smooth', block: 'center' });
+            });
+            
+            // Quote Button
+            document.getElementById('quote-btn').addEventListener('click', function() {
+                document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
+                
+                // Auto-fill product interest
+                const select = contactForm.querySelector('select');
+                select.value = 'All Products';
+            });
+            
+            // Order Buttons Delegation
+            document.addEventListener('click', function(event) {
+                if (event.target.closest('button') && event.target.closest('button').textContent.includes('Order') || 
+                    event.target.closest('button') && event.target.closest('button').textContent.includes('Buy') ||
+                    event.target.closest('button') && event.target.closest('button').textContent.includes('Cart')) {
+                    
+                    const productCard = event.target.closest('.equipment-card, .chemical-card, .pest-card');
+                    if (productCard) {
+                        const productName = productCard.querySelector('h4').textContent;
+                        const productPrice = productCard.querySelector('.text-2xl').textContent;
+                        
+                        // Show order modal
+                        alert(`Added to cart: ${productName}\nPrice: ${productPrice}\n\nOur sales manager will contact you to confirm your order.`);
+                        
+                        // Scroll to contact form
+                        setTimeout(() => {
+                            document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' });
+                        }, 500);
+                    }
+                }
+            });
+            
+            // Smooth Navigation
+            document.addEventListener('click', function(event) {
+                const link = event.target.closest('a[href^="#"]');
+                if (!link) return;
+                event.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+            
+            // Initialize all products visible
+            document.querySelector('.category-tab[data-category="all"]').click();
+        });
+    </script>
+</body>
+</html>
